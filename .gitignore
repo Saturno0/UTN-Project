@@ -23,8 +23,5 @@ dist-ssr
 *.sln
 *.sw?
 
-#el env, los json y el server.js
-.env
-*.json
-server.js
+
 

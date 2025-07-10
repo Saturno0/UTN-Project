@@ -1,5 +1,8 @@
 import { Link } from "react-router-dom";
 import '../styles/Footer.css';
+import facebook from '../assets/Icons/facebook-brands-.svg';
+import instagram from '../assets/Icons/instagram-brands-.svg';
+import twitter from '../assets/Icons/square-twitter-brands-solid.svg';
 
 function Footer() {
     return (
@@ -33,14 +36,14 @@ function Footer() {
                     <h2>Contacto</h2>
                     <div className="contact-info">
                         <p>¿Tienes alguna pregunta? Contáctanos por correo o completa nuestro formulario.</p>
-                        <Link to="/FormPage"> Formulario de Contacto </Link>
+                        <Link to="/form"> Formulario de Contacto </Link>
                     </div>
 
                     <p>Redes sociales:</p>
                     <div className="social-media">
-                        <a href="#"><img src="./assets/Icons/facebook-brands-.svg" alt="Facebook" /></a>
-                        <a href="#"><img src="./assets/Icons/instagram-brands-.svg" alt="Instagram" /></a>
-                        <a href="#"><img src="./assets/Icons/square-twitter-brands-solid.svg" alt="Twitter" /></a>
+                        <a href="#"><img src={facebook} alt="Facebook" /></a>
+                        <a href="#"><img src={instagram} alt="Instagram" /></a>
+                        <a href="#"><img src={twitter} alt="Twitter" /></a>
                     </div>
                 </div>
             </div>

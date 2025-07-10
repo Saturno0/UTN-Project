@@ -1,0 +1,96 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "nombre": "Nombre del Producto 1",
+      "imagen": "https://cameo-oficial.com.ar/wp-content/uploads/2025/04/54.jpg",
+      "calificacion": 4.0,
+      "opiniones": 23,
+      "descripcion": "Descripción del producto. Perfecto para el uso diario.",
+      "stock": true,
+      "descuento": 20,
+      "precio_actual": 100,
+      "precio_original": 125,
+      "tamaños": ["S", "M", "L", "XL"],
+      "especificaciones": {
+        "material": "Algodón 100%",
+        "peso": "500g",
+        "fabricado_en": "Argentina"
+      },
+      "colores": [
+        {"nombre":"Beige", "cantidad":0, "stock": 15},
+        {"nombre":"Blanco", "cantidad":0, "stock": 15},
+        {"nombre":"Bordo", "cantidad":0, "stock": 15}
+      ]
+    },
+    {
+      "id": 2,
+      "nombre": "Nombre del Producto 2",
+      "imagen": "https://cameo-oficial.com.ar/wp-content/uploads/2025/04/1-scaled.jpg",
+      "calificacion": 4.0,
+      "opiniones": 23,
+      "descripcion": "Descripción del producto. Perfecto para el uso diario.",
+      "stock": true,
+      "descuento": 20,
+      "precio_actual": 250,
+      "precio_original": 313,
+      "tamaños": ["S", "M", "L", "XL"],
+      "especificaciones": {
+        "material": "Algodón 100%",
+        "peso": "500g",
+        "fabricado_en": "Argentina"
+      },
+      "colores": [
+        {"nombre":"Beige", "cantidad":0, "stock": 15},
+        {"nombre":"Blanco", "cantidad":0, "stock": 15},
+        {"nombre":"Bordo", "cantidad":0, "stock": 15}
+      ]
+    },
+    {
+      "id": 3,
+      "nombre": "Nombre del Producto 3",
+      "imagen": "https://cameo-oficial.com.ar/wp-content/uploads/2025/02/CATALOGO-05-3-scaled.jpg",
+      "calificacion": 4.0,
+      "opiniones": 23,
+      "descripcion": "Descripción del producto. Perfecto para el uso diario.",
+      "stock": true,
+      "descuento": 30,
+      "precio_actual": 150,
+      "precio_original": 215,
+      "tamaños": ["S", "M", "L", "XL"],
+      "especificaciones": {
+        "material": "Algodón 100%",
+        "peso": "500g",
+        "fabricado_en": "Argentina"
+      },
+      "colores": [
+        {"nombre":"Beige", "cantidad":0, "stock": 15},
+        {"nombre":"Blanco", "cantidad":0, "stock": 15},
+        {"nombre":"Bordo", "cantidad":0, "stock": 15}
+      ]
+    },
+    {
+      "id": 4,
+      "nombre": "Nombre del Producto 4",
+      "imagen": "https://cameo-oficial.com.ar/wp-content/uploads/2025/01/CATALOGO_Mesa-de-trabajo-1-2-scaled.jpg",
+      "calificacion": 3.0,
+      "opiniones": 13,
+      "descripcion": "Descripción del producto. Perfecto para el uso diario.",
+      "stock": true,
+      "descuento": 0,
+      "precio_actual": 300,
+      "precio_original": 300,
+      "tamaños": ["S", "M", "L", "XL"],
+      "especificaciones": {
+        "material": "Algodón 100%",
+        "peso": "500g",
+        "fabricado_en": "Argentina"
+      },
+      "colores": [
+        {"nombre":"Beige", "cantidad":0, "stock": 15},
+        {"nombre":"Blanco", "cantidad":0, "stock": 15},
+        {"nombre":"Bordo", "cantidad":0, "stock": 15}
+      ]
+    }
+  ]
+}

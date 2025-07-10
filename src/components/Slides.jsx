@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import image1 from '../assets/img/ChatGPT Image 1 may 2025, 17_48_14.png';
-import image2 from '../assets/img/ChatGPT Image 4 may 2025, 13_18_48.png';
+import image2 from '../assets/img/ChatGPT Image 10 jul 2025, 17_09_02.png';
 
 const Slides = () => {
   const [currentSlide, setCurrentSlide] = useState(true);
