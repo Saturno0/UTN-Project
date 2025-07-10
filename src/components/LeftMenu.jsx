@@ -16,7 +16,11 @@ const LeftMenu = ({ menuOpen, setMenuOpen, handleNavigation, user }) => {
                         <h3>Productos</h3>
                     </Link>
                 </li>
-                <li className="links"><h3>Nuevo ingreso</h3></li>
+                <li className="links">
+                    <Link to='/newIn'>
+                        <h3>Nuevo ingreso</h3>
+                    </Link>
+                </li>
                 <li className="links"><h3>Mas vendidos</h3></li>
                 {menuOpen && (
                     <li onClick={() => handleNavigation()}>

@@ -13,7 +13,6 @@ const ProductPage = () => {
         <>
             <Navbar />
             <ProductDetail id="main" product={producto} />
-            {/* <ProductsOfKeen products={dataGet} type={producto.type} /> */}
             <Footer />
         </>
     );

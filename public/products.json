@@ -18,10 +18,11 @@
         "fabricado_en": "Argentina"
       },
       "colores": [
-        {"nombre":"Beige", "cantidad":0, "stock": 15},
-        {"nombre":"Blanco", "cantidad":0, "stock": 15},
-        {"nombre":"Bordo", "cantidad":0, "stock": 15}
-      ]
+        { "nombre": "Beige", "cantidad": 0, "stock": 15 },
+        { "nombre": "Blanco", "cantidad": 0, "stock": 15 },
+        { "nombre": "Bordo", "cantidad": 0, "stock": 15 }
+      ],
+      "ingreso": "viejo"
     },
     {
       "id": 2,
@@ -41,10 +42,11 @@
         "fabricado_en": "Argentina"
       },
       "colores": [
-        {"nombre":"Beige", "cantidad":0, "stock": 15},
-        {"nombre":"Blanco", "cantidad":0, "stock": 15},
-        {"nombre":"Bordo", "cantidad":0, "stock": 15}
-      ]
+        { "nombre": "Beige", "cantidad": 0, "stock": 15 },
+        { "nombre": "Blanco", "cantidad": 0, "stock": 15 },
+        { "nombre": "Bordo", "cantidad": 0, "stock": 15 }
+      ],
+      "ingreso": "nuevo"
     },
     {
       "id": 3,
@@ -64,10 +66,11 @@
         "fabricado_en": "Argentina"
       },
       "colores": [
-        {"nombre":"Beige", "cantidad":0, "stock": 15},
-        {"nombre":"Blanco", "cantidad":0, "stock": 15},
-        {"nombre":"Bordo", "cantidad":0, "stock": 15}
-      ]
+        { "nombre": "Beige", "cantidad": 0, "stock": 15 },
+        { "nombre": "Blanco", "cantidad": 0, "stock": 15 },
+        { "nombre": "Bordo", "cantidad": 0, "stock": 15 }
+      ],
+      "ingreso": "viejo"
     },
     {
       "id": 4,
@@ -87,10 +90,85 @@
         "fabricado_en": "Argentina"
       },
       "colores": [
-        {"nombre":"Beige", "cantidad":0, "stock": 15},
-        {"nombre":"Blanco", "cantidad":0, "stock": 15},
-        {"nombre":"Bordo", "cantidad":0, "stock": 15}
-      ]
+        { "nombre": "Beige", "cantidad": 0, "stock": 15 },
+        { "nombre": "Blanco", "cantidad": 0, "stock": 15 },
+        { "nombre": "Bordo", "cantidad": 0, "stock": 15 }
+      ],
+      "ingreso": "nuevo"
+    },
+    {
+      "id": 5,
+      "nombre": "Remera escote cuadrado",
+      "imagen": "https://cameo-oficial.com.ar/wp-content/uploads/2025/06/CATALOGO-04-5-scaled.jpg",
+      "calificacion": 4.5,
+      "opiniones": 32,
+      "descripcion": "Remera básica con escote cuadrado en variedad de colores neutros. Estilo cómodo y ajustado.",
+      "stock": true,
+      "descuento": 10,
+      "precio_actual": 180,
+      "precio_original": 200,
+      "tamaños": ["S", "M", "L"],
+      "especificaciones": {
+        "material": "Algodón con spandex",
+        "peso": "300g",
+        "fabricado_en": "Argentina"
+      },
+      "colores": [
+        { "nombre": "Negro", "cantidad": 0, "stock": 10 },
+        { "nombre": "Gris", "cantidad": 0, "stock": 12 },
+        { "nombre": "Chocolate", "cantidad": 0, "stock": 8 },
+        { "nombre": "Blanco", "cantidad": 0, "stock": 10 },
+        { "nombre": "Bordo", "cantidad": 0, "stock": 10 }
+      ],
+      "ingreso": "viejo"
+    },
+    {
+      "id": 6,
+      "nombre": "Remera Minimalist",
+      "imagen": "https://cameo-oficial.com.ar/wp-content/uploads/2025/06/CATALOGO-02-6-scaled.jpg",
+      "calificacion": 4.2,
+      "opiniones": 18,
+      "descripcion": "Remera entallada con mangas amplias y estampa 'MINIMALIST'. Estilo urbano.",
+      "stock": true,
+      "descuento": 5,
+      "precio_actual": 190,
+      "precio_original": 200,
+      "tamaños": ["S", "M", "L"],
+      "especificaciones": {
+        "material": "Algodón 100%",
+        "peso": "280g",
+        "fabricado_en": "Argentina"
+      },
+      "colores": [
+        { "nombre": "Chocolate", "cantidad": 0, "stock": 14 }
+      ],
+      "ingreso": "viejo"
+    },
+    {
+      "id": 7,
+      "nombre": "Sweater básico de punto",
+      "imagen": "https://cameo-oficial.com.ar/wp-content/uploads/2025/06/CATALOGO-02-1-scaled.jpg",
+      "calificacion": 4.6,
+      "opiniones": 41,
+      "descripcion": "Sweater de punto suave, ideal para días frescos. Disponible en cinco colores.",
+      "stock": true,
+      "descuento": 15,
+      "precio_actual": 420,
+      "precio_original": 495,
+      "tamaños": ["S", "M", "L", "XL"],
+      "especificaciones": {
+        "material": "Acrílico y algodón",
+        "peso": "700g",
+        "fabricado_en": "Argentina"
+      },
+      "colores": [
+        { "nombre": "Negro", "cantidad": 0, "stock": 10 },
+        { "nombre": "Gris", "cantidad": 0, "stock": 10 },
+        { "nombre": "Blanco", "cantidad": 0, "stock": 10 },
+        { "nombre": "Camel", "cantidad": 0, "stock": 10 },
+        { "nombre": "Bordo", "cantidad": 0, "stock": 10 }
+      ],
+      "ingreso": "nuevo"
     }
   ]
 }
