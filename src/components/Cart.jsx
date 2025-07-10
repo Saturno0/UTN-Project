@@ -7,10 +7,23 @@ import { clearCart } from '../hooks/cartSlice.js';
 const Cart = ({ items, total, dispatch }) => {
     const [user, setUser] = useState([]);
     const navigate = useNavigate();
-
+    
     useEffect(()=> {
-        setUser(JSON.parse(localStorage.getItem('user')));
+        const userData = JSON.parse(localStorage.getItem('user'));
+        if (userData) {
+            setUser(userData);
+        } else {
+            setUser({ isRegistered: false });
+        }
     }, [])
+
+    const handleNavigate = () => {
+        if (!user.isRegistered) {
+            navigate('/login');
+        } else {
+            navigate('/checkout');
+        }
+    }
     
     return (
         <main className="cart-page container">
@@ -26,13 +39,7 @@ const Cart = ({ items, total, dispatch }) => {
                         <h2>Total: ${total}</h2>
                         <button className="btn-clear" onClick={() => dispatch(clearCart())}>Vaciar carrito</button>
                         <div className="cart-actions">
-                        <button className="btn-buy" onClick={() => {
-                            if (!user.isRegistered) {
-                                navigate('/login');
-                            } else {
-                                navigate('/checkout');
-                            }
-                        }}>
+                        <button className="btn-buy" onClick={() => handleNavigate()}>
                             Comprar 
                         </button>
 
