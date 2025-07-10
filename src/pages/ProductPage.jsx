@@ -1,0 +1,22 @@
+import Navbar from '../components/Navbar';
+import ProductDetail from '../components/ProductDetail';
+import Footer from '../components/Footer';
+import { useLocation } from 'react-router-dom';
+import '../styles/Product.css';
+
+
+const ProductPage = () => {
+    const { state } = useLocation();
+    const producto = state.producto;
+
+    return (
+        <>
+            <Navbar />
+            <ProductDetail id="main" product={producto} />
+            {/* <ProductsOfKeen products={dataGet} type={producto.type} /> */}
+            <Footer />
+        </>
+    );
+}
+
+export default ProductPage;

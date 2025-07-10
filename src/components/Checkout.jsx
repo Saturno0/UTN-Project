@@ -1,0 +1,99 @@
+import { useState } from "react";
+import { useNavigate } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import CheckOutForm from "./CheckOutForm";
+import CartItems from "./CartItems";
+import { clearCart } from "../hooks/cartSlice";
+
+const Checkout = () => {
+    const dispatch = useDispatch();
+    const navigate = useNavigate();
+    const cartItems = useSelector((state) => state.cart.products);
+    const user = useSelector((state) => state.user);
+    const [formData, setFormData] = useState({
+        nombre: '',
+        email: user.email,
+        telefono: "",
+        direccion: "",
+        ciudad: "",
+        codigoPostal: "",
+        metodoPago: "tarjeta"
+    });
+
+
+    const groupedItems = cartItems.reduce((acc, item) => {
+        const key = `${item.id}-${item.name}-${item.color}`;
+        if (!acc[key]) {
+            acc[key] = { ...item, quantity: 1 };
+        } else {
+            acc[key].quantity += 1;
+        }
+        return acc;
+    }, {});
+    
+
+    const items = Object.values(groupedItems);
+    const total = items.reduce((sum, item) => (sum + (item.precio_actual || 100) * item.quantity), 0);
+
+    
+    const handleInputChange = (e) => {
+        const { name, value } = e.target;
+        setFormData(prevState => ({
+            ...prevState,
+            [name]: value
+        }));
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        
+        try {
+            const shipping = 500;
+            const finalTotal = total + shipping;
+
+            const orderData = {
+                ...formData,
+                items: items,
+                total: finalTotal
+            };
+
+            const response = await fetch('http://localhost:3001/api/send-confirmation', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(orderData)
+            });
+
+            const data = await response.json();
+
+            if (data.success) {
+                alert("¡Compra realizada con éxito! En breve recibiras un mensaje para realiar el pago.");
+                navigate('/');
+                dispatch(clearCart(cartItems));
+            } else {
+                throw new Error(data.message);
+            }
+        } catch (error) {
+            console.error('Error:', error);
+            alert("Hubo un error al procesar tu compra. Por favor intenta nuevamente." + error);
+        }
+    };
+
+    return (
+        <div className="checkout-container">
+            <h1>Finalizar Compra</h1>
+            
+            <div className="checkout-content">
+                <div className="checkout-form">
+                    <CheckOutForm handleSubmit={handleSubmit} formData={formData} handleInputChange={handleInputChange} />
+                </div>
+                <div className="order-summary">
+                    <CartItems items={items} total={total} dispatch={dispatch}/>
+                </div>
+            </div>
+        </div>
+    );
+}
+
+export default Checkout;
